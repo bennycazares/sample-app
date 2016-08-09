@@ -5,6 +5,7 @@ if Rails.env.production?
       :provider              => 'AWS',
       :aws_access_key_id     => ENV['AKIAIGOSBKLK26A5YMTQ'],
       :aws_secret_access_key => ENV['AD6Yr6LP0Vji28fGU8SVc/oYm8UwJ+ioaVPnPaFp']
+      :region                => ENV['us-east-1']
     }
     config.fog_directory     =  ENV['sample-app32']
   end
