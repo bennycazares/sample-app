@@ -1,4 +1,6 @@
 <% if logged_in? %>
+<div class="container">
+
   <div class="row">
     <aside class="col-sm-12 col-md-4">
       <section class="user_info">
@@ -16,6 +18,7 @@
       <%= render 'shared/feed' %>
     </div>
   </div>
+</div>
 
 <% else %>
 <div class="container2">
