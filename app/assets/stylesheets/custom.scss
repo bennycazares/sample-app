@@ -284,3 +284,9 @@ footer {
     }
   }
 }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    letter-spacing: 1px;
+}
+}
