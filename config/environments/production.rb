@@ -33,6 +33,7 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_assets = true
 
+  config.cache_classes = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -40,6 +41,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
+  config.assets.digest = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -86,6 +88,7 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  config.cache_classes = true
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
