@@ -16,19 +16,20 @@
       <%= render 'shared/feed' %>
     </div>
   </div>
+
 <% else %>
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+<div class="container2">
+  <div class="inner cover">
+    <h1 class="cover-heading">SAMPLE APP</h1>
+    <p class="lead">Share and see your friends workouts!</p>
+    <p class="lead">
+      <%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %>
+    </p>
+  </div>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
 <% end %>
+
+<!--
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %> -->
