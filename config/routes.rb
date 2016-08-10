@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'password_resets/new'
 
   get 'password_resets/edit'
@@ -26,6 +27,7 @@ Rails.application.routes.draw do
     resources :password_resets,     only: [:new, :create, :edit, :update]
     resources :microposts,          only: [:create, :destroy]
     resources :relationships,       only: [:create, :destroy]
+    resources :charges
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # root  'application#home'
 end
