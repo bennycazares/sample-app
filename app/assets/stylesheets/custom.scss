@@ -479,7 +479,7 @@ body {
   }
 }
 .navbar{
-  background-color: rgba(0,0,0,.05);
+  background-color: black;
   border-color: rgba(0,0,0,.5);
 }
 .navbar-nav {
@@ -488,13 +488,17 @@ body {
   border: none;
 }
 .navbar-collapse.collapse.in{
-  margin-left: -30px;
-  margin-right: -30px;
+  // margin-left: -30px;
+  // margin-right: -30px;
 }
 .button {
 border: solid 1px white;
 }
 .navbar-inverse .navbar-toggle{
-  background-color: #333;
+  background-color: black;
   border: solid 1px white;
+}
+.navbar-collapse{
+  padding-left: 0px;
+  padding-right: 0px;
 }
