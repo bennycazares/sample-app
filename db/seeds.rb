@@ -1,4 +1,9 @@
 #users
+user = User.new
+user.email = 'benny@malonemediagroup.com'
+user.password = 'valid_password'
+user.password_confirmation = 'valid_password'
+
 User.create!(name:  "Example User",
              email: "example@railstutorial.org",
              password:              "foobar",
