@@ -8,14 +8,16 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $5.00</span>
+      <span>Amount: $6.00</span>
     </label>
   </article>
-</div>
+
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Order Item"
           data-amount="2000"
-          data-locale="auto"></script>
+          data-locale="auto">
+  </script>
+</div>
 <% end %>
